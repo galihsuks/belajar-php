@@ -22,6 +22,11 @@ $artikel = [
         'tanggal' => '20/03/2024'
     ],
 ];
+
+if (!isset($_GET['key']) || $_GET['key'] != 'm4um4suk') {
+    header('Location: https://oceria.amagabar.com/');
+    die();
+}
 ?>
 
 <!DOCTYPE html>
